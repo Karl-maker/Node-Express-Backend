@@ -9,7 +9,6 @@ class UserRepository extends BaseModel<IUser> {
     async create(data: IUser): Promise<IResult<IUser>> {
         return await this.db.create(data);
     }
-
 }
 
 export interface IUser {
