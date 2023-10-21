@@ -2,8 +2,18 @@ import IDatabase from "..";
 import { IResult } from "../../../base/model";
 
 class DummyDB implements IDatabase<any> {
-    findById(id: string): Promise<IResult<any>> {
-        throw new Error("Method not implemented.");
+    
+    async findById(id: string): Promise<IResult<any>> {
+        const result: IResult<any> = {
+            message: "Successful",
+            successful: true,
+            details: {
+                id,
+                email: 'test@gmail.com'
+            }
+        } 
+        
+        return result;
     }
     findMany(where: object): Promise<IResult<any>> {
         throw new Error("Method not implemented.");

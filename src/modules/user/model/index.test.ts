@@ -1,4 +1,4 @@
-import UserRepository, { IUser } from ".";
+import UserRepository, { IUserRepository } from ".";
 import { IResult } from "../../base/model";
 import DummyDB from "../../database/model/dummy";
 
@@ -8,7 +8,7 @@ describe('UserRepository', () => {
     describe('create', () => {
         it('should create a new user', async () => {
             // Define the user data you want to create
-            const userData: IUser = {
+            const userData: IUserRepository = {
                 first_name: 'James',
                 last_name: 'William',
                 email: 'test@example.com',
@@ -17,7 +17,7 @@ describe('UserRepository', () => {
             };
 
             // Define the expected result
-            const expectedResult: IResult<IUser> = {
+            const expectedResult: IResult<IUserRepository> = {
                 successful: true,
                 message: 'Successfully',
                 details: userData
