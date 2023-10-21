@@ -1,5 +1,5 @@
 import IDatabase from "..";
-import { IResult } from "../../../base/model";
+import { IResult } from "../../../modules/base/model";
 
 class DummyDB implements IDatabase<any> {
     

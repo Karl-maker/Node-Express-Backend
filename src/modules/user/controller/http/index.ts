@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import UserRepository, { IUserRepository } from "../../model";
-import IDatabase from "../../../database/model";
-import HTTPController from "../../../controller/model";
+import IDatabase from "../../../../services/database";
+import HTTPController from "../../../base/controller";
 import HTTPError from "../../../../utils/error";
-import { IEvent } from "../../../event";
+import { IEvent } from "../../../../services/event";
 import * as Definitions from "../events/definitions";
 
 export default class UserHTTPController extends HTTPController {

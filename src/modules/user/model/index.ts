@@ -1,5 +1,5 @@
 import BaseModel, { IResult } from "../../base/model";
-import IDatabase from "../../database/model";
+import IDatabase from "../../../services/database";
 
 class UserRepository extends BaseModel<IUserRepository> {
     constructor(db: IDatabase<IUserRepository>){

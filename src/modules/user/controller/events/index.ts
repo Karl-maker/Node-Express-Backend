@@ -1,8 +1,8 @@
 import { IUserRepository } from "../../model";
-import { IEvent } from "../../../event";
-import EventController from "../../../event/controller";
+import { IEvent } from "../../../../services/event";
+import EventController from "../../../../services/event/controller";
 import * as Definitions from "./definitions";
-import IDatabase from "../../../database/model";
+import IDatabase from "../../../../services/database";
 
 const UserEventController = (event: IEvent<any>, db: IDatabase<any>) => {
     const eventController = new EventController(event);

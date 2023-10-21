@@ -1,9 +1,7 @@
-import IDatabase from "../../database/model";
-import DummyDB from "../../database/model/dummy";
-import { IEvent } from "../../event";
-import NodeServer from "../../server/model";
+import IDatabase from "../../../services/database";
+import { IEvent } from "../../../services/event";
+import NodeServer from "../../../services/server";
 import UserHTTPController from "../controller/http";
-import { Request, Response, NextFunction } from "express";
 
 const ROUTE = '/user';
 

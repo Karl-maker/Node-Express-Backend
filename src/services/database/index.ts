@@ -1,4 +1,4 @@
-import { IResult } from "../../base/model";
+import { IResult } from "../../../modules/base/model";
 
 export default interface IDatabase<T> {
     create(data: Partial<T>): Promise<IResult<T>>;

@@ -1,5 +1,4 @@
-import IDatabase from "../../database/model";
-
+import IDatabase from "../../../services/database";
 /**
  * A base model for interacting with a database.
  *

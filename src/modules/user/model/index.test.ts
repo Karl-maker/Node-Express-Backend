@@ -1,6 +1,6 @@
 import UserRepository, { IUserRepository } from ".";
 import { IResult } from "../../base/model";
-import DummyDB from "../../database/model/dummy";
+import DummyDB from "../../../services/database/dummy";
 
 describe('UserRepository', () => {
     let userRepository = new UserRepository(new DummyDB());
